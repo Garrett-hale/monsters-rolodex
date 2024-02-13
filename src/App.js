@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     //console.log("Render");
-    /**//***/
+    /**//***//** */
     const { monsters, searchField } = this.state;
     const { onSearchChange } = this;
 
