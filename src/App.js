@@ -34,7 +34,7 @@ class App extends Component {
 
 
   onSearchChange = (event) => {
-    //console.log(event.target.value);
+    console.log(event);
     const searchField = event.target.value.toLocaleLowerCase();
       this.setState(() => {
         return { searchField };
@@ -54,7 +54,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <SearchBox onChangeHandler={onSearchChange} />
+        <SearchBox 
+        className='search-box'
+        onChangeHandler={onSearchChange} 
+        placeholder='search monsters'
+        />
         <CardList monsters={filteredMonsters} />
       </div>
     );
